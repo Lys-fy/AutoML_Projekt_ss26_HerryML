@@ -1,0 +1,5 @@
+# Only torch + numpy are needed; everything else is the Python standard library.
+# The upper bound keeps us on CUDA-12.x wheels, which run on both CUDA-12 and
+# CUDA-13 driver hosts (do not raise it without checking the target driver).
+torch>=2.4,<2.9
+numpy>=1.24,<3
